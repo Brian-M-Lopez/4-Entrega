@@ -23,9 +23,12 @@
 .miImagen {
   transition: all 0.5s; }
 
-.miImagen:hover {
+
+  @media all and (min-width: 1000px ) {
+ .miImagen:hover {
   transform: scale(1.1, 1.1);
   border: 5px solid rgba(255, 0, 0, 0.172); }
+ }
 
 .miFooter {
   margin-top: 100px;
@@ -84,6 +87,21 @@
   display: inline-block;
   color: #1b202d;
   position: relative; }
+  @media all and (max-width: 435px) {
+    .miTitulo {
+      font-size: 30px;
+    }
+    .columnaMia {
+     background-color: rgba(0, 0, 0, 0.24);
+     display: flex;
+     justify-content: center;
+    }
+    .miImagen {
+      width: 300px;
+      height: auto;
+      margin-top: 10px;
+    }
+   }
 
 .miTitulo::after {
   content: '';
